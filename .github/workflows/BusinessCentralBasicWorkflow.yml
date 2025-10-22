@@ -11,9 +11,9 @@ jobs:
          $istanzeAttive = Get-NAVServerInstance
          Write-Host "Le istanze attive sono; $istanzeAttive"  
  Gestione_BC2:
-   runs-on: ubuntu-latest
+   runs-on: windows-latest
    steps:
-    - name: Esegui un comando di esempio su Linux
+    - name: Esegui un comando di esempio su jobs differente
       run: !
         $istanzeAttive = Get-NAVServerInstance
-        echo "Le istanze attive sono; $istanzeAttive"              
+        echo "Le istanze attive sono; $istanzeAttive"             git add . 
