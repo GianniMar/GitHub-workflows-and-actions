@@ -1,0 +1,11 @@
+name: Basic Workflow Business Central
+on: workflow_dispatch
+
+jobs:
+ Gestione-BC:
+run-on: windows-latest
+steps:
+ -name: Importa il modulo di Business Central
+  run: Import-Module -Name "C:\Program Files\Microsoft Dynamics 365 Business Central\210\Service\navadmintool.ps1"
+ -name: Scrivi qualcosa sulla command line
+  run: write-host "sto scrivendo qualcosa" 
