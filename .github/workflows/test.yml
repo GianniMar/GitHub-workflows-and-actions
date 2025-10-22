@@ -8,6 +8,11 @@ jobs:
       run:   write-host "Benvenuto nel lancio del tuo primo workflow"
     - name: secondo step
       run: write-host "questo è il tuo secondo step che ne pensi di fare qualcosa di piu utile ?" 
+ secondo-jobs:
+    runs-on: ubuntu-latest
+    steps:
+     - name: primo step secondo job
+       run:  echo "primo step secondo job gira su una macchina linux, ${{github.workflow}}"  
  
 
 
