@@ -1,0 +1,13 @@
+name: primo workflow
+on: workflow_dispatch
+jobs:
+ primo-jobs:
+  runs-on: windows-latest
+  steps:
+    - name: primo step
+      run:   write-host "Benvenuto nel lancio del tuo primo workflow"
+    - name: secondo step
+      run: write-host "questo è il tuo secondo step che ne pensi di fare qualcosa di piu utile ?" 
+ 
+
+
