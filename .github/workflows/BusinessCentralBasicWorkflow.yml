@@ -9,4 +9,11 @@ jobs:
     - name: Esegui un comando di esempio
       run: ! 
          $istanzeAttive = Get-NAVServerInstance
-         Write-Host "Le istanze attive sono; $istanzeAttive"        
+         Write-Host "Le istanze attive sono; $istanzeAttive"  
+ Gestione_BC2:
+   runs-on: ubuntu-latest
+   steps:
+    - name: Esegui un comando di esempio su Linux
+      run: !
+        $istanzeAttive = Get-NAVServerInstance
+        echo "Le istanze attive sono; $istanzeAttive"              
