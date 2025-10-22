@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - name: primo step secondo job
-       run:  echo "primo step secondo job gira su una macchina linux, ${{github.workflow}}"  
+       run:  echo "primo step secondo job gira su una macchina linux, ${{github.job.primo-jobs}}"  
  
 
 
