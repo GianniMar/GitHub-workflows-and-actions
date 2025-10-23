@@ -16,4 +16,4 @@ jobs:
     - name: Esegui un comando di esempio su jobs differente
       run: !
         $istanzeAttive = Get-NAVServerInstance
-        echo "Le istanze attive sono; $istanzeAttive"             git add . 
+        echo "Le istanze attive sono; $istanzeAttive"         
